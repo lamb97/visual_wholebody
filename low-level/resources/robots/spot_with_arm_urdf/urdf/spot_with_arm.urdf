@@ -12,7 +12,7 @@ Development Kit License (20191101-BDSDK-SL).
     <visual>
       <origin/>
       <geometry>
-        <mesh filename="meshes/base_link_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/base_link_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <collision>
@@ -32,7 +32,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="fl.hip">
     <visual>
       <geometry>
-        <mesh filename="meshes/fl_hip_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/fl_hip_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <inertial>
@@ -45,7 +45,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="fr.hip">
     <visual>
       <geometry>
-        <mesh filename="meshes/fr_hip_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/fr_hip_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <inertial>
@@ -58,7 +58,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="hl.hip">
     <visual>
       <geometry>
-        <mesh filename="meshes/hl_hip_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/hl_hip_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <inertial>
@@ -71,7 +71,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="hr.hip">
     <visual>
       <geometry>
-        <mesh filename="meshes/hr_hip_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/hr_hip_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <inertial>
@@ -85,7 +85,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="fl.uleg">
     <visual>
       <geometry>
-        <mesh filename="meshes/l_uleg_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/l_uleg_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <collision>
@@ -104,7 +104,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="fr.uleg">
     <visual>
       <geometry>
-        <mesh filename="meshes/r_uleg_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/r_uleg_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <collision>
@@ -123,7 +123,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="hl.uleg">
     <visual>
       <geometry>
-        <mesh filename="meshes/l_uleg_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/l_uleg_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <collision>
@@ -142,7 +142,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="hr.uleg">
     <visual>
       <geometry>
-        <mesh filename="meshes/r_uleg_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/r_uleg_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <collision>
@@ -162,7 +162,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="fl.lleg">
     <visual>
       <geometry>
-        <mesh filename="meshes/lleg_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/lleg_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <collision>
@@ -187,7 +187,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="fr.lleg">
     <visual>
       <geometry>
-        <mesh filename="meshes/lleg_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/lleg_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <collision>
@@ -212,7 +212,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="hl.lleg">
     <visual>
       <geometry>
-        <mesh filename="meshes/lleg_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/lleg_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <collision>
@@ -237,7 +237,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="hr.lleg">
     <visual>
       <geometry>
-        <mesh filename="meshes/lleg_0_geom_visual_mesh.stl"/>
+        <mesh filename="../meshes/lleg_0_geom_visual_mesh.stl"/>
       </geometry>
     </visual>
     <collision>
@@ -260,7 +260,7 @@ Development Kit License (20191101-BDSDK-SL).
   </link>
 
   <!--Skeleton: HX Joints -->
-  <joint name="fl.hx" type="revolute">
+  <joint name="fl.hx_joint" type="revolute">
     <parent link="base"/>
     <child link="fl.hip"/>
     <origin xyz="0.29785 0.05500 0.00000"/>
@@ -269,7 +269,7 @@ Development Kit License (20191101-BDSDK-SL).
     <dynamics damping="0" friction="0"/>
   </joint>
 
-  <joint name="fr.hx" type="revolute">
+  <joint name="fr.hx_joint" type="revolute">
     <parent link="base"/>
     <child link="fr.hip"/>
     <origin xyz="0.29785 -0.05500 0.00000"/>
@@ -278,7 +278,7 @@ Development Kit License (20191101-BDSDK-SL).
     <dynamics damping="0" friction="0"/>
   </joint>
 
-  <joint name="hl.hx" type="revolute">
+  <joint name="hl.hx_joint" type="revolute">
     <parent link="base"/>
     <child link="hl.hip"/>
     <origin xyz="-0.29785 0.05500 0.00000"/>
@@ -287,7 +287,7 @@ Development Kit License (20191101-BDSDK-SL).
     <dynamics damping="0" friction="0"/>
   </joint>
 
-  <joint name="hr.hx" type="revolute">
+  <joint name="hr.hx_joint" type="revolute">
     <parent link="base"/>
     <child link="hr.hip"/>
     <origin xyz="-0.29785 -0.05500 0.00000"/>
@@ -297,7 +297,7 @@ Development Kit License (20191101-BDSDK-SL).
   </joint>
 
   <!--Skeleton: HY Joints -->
-  <joint name="fl.hy" type="revolute">
+  <joint name="fl.hy_joint" type="revolute">
     <parent link="fl.hip"/>
     <child link="fl.uleg"/>
     <origin xyz="0.0 0.110945 0.0"/>
@@ -306,7 +306,7 @@ Development Kit License (20191101-BDSDK-SL).
     <dynamics damping="0" friction="0"/>
   </joint>
 
-  <joint name="fr.hy" type="revolute">
+  <joint name="fr.hy_joint" type="revolute">
     <parent link="fr.hip"/>
     <child link="fr.uleg"/>
     <origin xyz="0.0 -0.110945 0.0"/>
@@ -315,7 +315,7 @@ Development Kit License (20191101-BDSDK-SL).
     <dynamics damping="0" friction="0"/>
   </joint>
 
-  <joint name="hl.hy" type="revolute">
+  <joint name="hl.hy_joint" type="revolute">
     <parent link="hl.hip"/>
     <child link="hl.uleg"/>
     <origin xyz="0.0 0.110945 0.0"/>
@@ -324,7 +324,7 @@ Development Kit License (20191101-BDSDK-SL).
     <dynamics damping="0" friction="0"/>
   </joint>
 
-  <joint name="hr.hy" type="revolute">
+  <joint name="hr.hy_joint" type="revolute">
     <parent link="hr.hip"/>
     <child link="hr.uleg"/>
     <origin xyz="0.0 -0.110945 0.0"/>
@@ -334,7 +334,7 @@ Development Kit License (20191101-BDSDK-SL).
   </joint>
 
   <!--Skeleton: KN Joints -->
-  <joint name="fl.kn" type="revolute">
+  <joint name="fl.kn_joint" type="revolute">
     <parent link="fl.uleg"/>
     <child link="fl.lleg"/>
     <origin xyz="0.025 0.000 -0.3205"/>
@@ -343,7 +343,7 @@ Development Kit License (20191101-BDSDK-SL).
     <dynamics damping="0" friction="0"/>
   </joint>
 
-  <joint name="fr.kn" type="revolute">
+  <joint name="fr.kn_joint" type="revolute">
     <parent link="fr.uleg"/>
     <child link="fr.lleg"/>
     <origin xyz="0.025 0.000 -0.3205"/>
@@ -352,7 +352,7 @@ Development Kit License (20191101-BDSDK-SL).
     <dynamics damping="0" friction="0"/>
   </joint>
 
-  <joint name="hl.kn" type="revolute">
+  <joint name="hl.kn_joint" type="revolute">
     <parent link="hl.uleg"/>
     <child link="hl.lleg"/>
     <origin xyz="0.025 0.000 -0.3205"/>
@@ -361,7 +361,7 @@ Development Kit License (20191101-BDSDK-SL).
     <dynamics damping="0" friction="0"/>
   </joint>
 
-  <joint name="hr.kn" type="revolute">
+  <joint name="hr.kn_joint" type="revolute">
     <parent link="hr.uleg"/>
     <child link="hr.lleg"/>
     <origin xyz="0.025 0.000 -0.3205"/>
@@ -374,7 +374,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="arm0.link_sh0">
     <visual>
       <geometry>
-        <mesh filename="meshes/arm0.link_sh0.stl"/>
+        <mesh filename="../meshes/arm0.link_sh0.stl"/>
       </geometry>
     </visual>
     <inertial>
@@ -387,12 +387,12 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="arm0.link_sh1">
     <visual>
       <geometry>
-        <mesh filename="meshes/arm0.link_sh1.stl"/>
+        <mesh filename="../meshes/arm0.link_sh1.stl"/>
       </geometry>
     </visual>
     <visual>
       <geometry>
-        <mesh filename="meshes/arm0.link_hr0.stl"/>
+        <mesh filename="../meshes/arm0.link_hr0.stl"/>
       </geometry>
     </visual>
     <inertial>
@@ -405,7 +405,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="arm0.link_el0">
     <visual>
       <geometry>
-        <mesh filename="meshes/arm0.link_el0.stl"/>
+        <mesh filename="../meshes/arm0.link_el0.stl"/>
       </geometry>
     </visual>
     <inertial>
@@ -418,7 +418,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="arm0.link_el1">
     <visual>
       <geometry>
-        <mesh filename="meshes/arm0.link_el1.stl"/>
+        <mesh filename="../eshes/arm0.link_el1.stl"/>
       </geometry>
     </visual>
     <inertial>
@@ -431,7 +431,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="arm0.link_wr0">
     <visual>
       <geometry>
-        <mesh filename="meshes/arm0.link_wr0.stl"/>
+        <mesh filename="../meshes/arm0.link_wr0.stl"/>
       </geometry>
     </visual>
     <inertial>
@@ -444,7 +444,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="arm0.link_wr1">
     <visual>
       <geometry>
-        <mesh filename="meshes/arm0.link_wr1.stl"/>
+        <mesh filename="../meshes/arm0.link_wr1.stl"/>
       </geometry>
     </visual>
     <inertial>
@@ -457,7 +457,7 @@ Development Kit License (20191101-BDSDK-SL).
   <link name="arm0.link_fngr">
     <visual>
       <geometry>
-        <mesh filename="meshes/arm0.link_fngr.stl"/>
+        <mesh filename="../meshes/arm0.link_fngr.stl"/>
       </geometry>
     </visual>
     <inertial>
